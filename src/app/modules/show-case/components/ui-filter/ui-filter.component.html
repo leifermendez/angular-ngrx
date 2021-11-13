@@ -1,0 +1,22 @@
+<div class="ui-wrapper">
+    <div class="ui-filter">
+        <div class="ui-filter-top">
+            <ul class="ui-list">
+                <li *ngFor="let a of test;first as f">
+                    <div class="ui-element" [ngClass]="{'ui-opacity':!f}">
+                        <i class="uil uil-car"></i> <span>Artworks</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="ui-filter-bottom">
+            <ul class="ui-list ui-more-gap">
+                <li *ngFor="let a of test;index as i">
+                    <div [ngClass]="{'ui-badge-primary':i === 1}" class="ui-element ui-element-secondary  ">
+                        <i class="uil uil-car"></i> <span>Artworks</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

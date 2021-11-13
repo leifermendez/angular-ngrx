@@ -1,0 +1,6 @@
+.ui-block-item {
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+}

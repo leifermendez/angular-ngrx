@@ -1,0 +1,39 @@
+.header {
+    background-color: var(--color-1);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 50px;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    border-bottom: solid 1px #dbdbdb;
+}
+
+.header__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 0 .5rem;
+}
+
+.header__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.header__list li {
+    cursor: pointer;
+    font-weight: 500;
+    padding: .35rem .5rem;
+}
+
+.header__list li .uil {
+    font-size: 1.2rem;
+}
+
+.header__list li.header__logo {
+    font-weight: 600;
+}

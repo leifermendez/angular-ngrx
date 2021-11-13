@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+:root {
+    --font-family-1: 'Poppins', sans-serif;
+    --color-1: white;
+    --color-2: #FAFBFD;
+    --color-3: #4579F6;
+    --color-4: #9E9CA8;
+    --color-5: #F5F6F8;
+    --color-6: #434050;
+    --border-radius: 15px;
+    --font-size-1: 1rem;
+    --font-size-2: 1.2rem;
+    --font-size-3: .9rem;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-family-1);
+    color: var(--color-6);
+}
+
+input::placeholder {
+    color: rgba(255, 255, 255, .6);
+}
+
+input,
+button {
+    font-family: var(--font-family-1);
+}
+
+*:focus {
+    outline: none;
+}
+
+app-ui-search,
+app-ui-filter,
+app-ui-block-item {
+    /* border: solid 2px red; */
+}

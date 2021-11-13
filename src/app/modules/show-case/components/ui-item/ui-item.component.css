@@ -1,0 +1,48 @@
+.ui-item {
+    cursor: pointer;
+    background-color: var(--color-1);
+    border-radius: var(--border-radius);
+    width: 275px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 0.2rem;
+}
+
+.ui-item:hover {
+    transition: all ease 150ms;
+    opacity: .6;
+}
+
+.ui-image {
+    border-radius: var(--border-radius);
+    height: 230px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.ui-block-text {
+    padding: .5rem;
+}
+
+.ui-small-section {
+    display: flex;
+    font-size: var(--font-size-3);
+    justify-content: space-between;
+    font-weight: 500;
+    align-content: center;
+    align-items: center;
+    gap: .35rem
+}
+
+.ui-author {
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    object-fit: cover;
+}
+
+.ui-more-info {
+    display: flex;
+    flex-direction: column;
+    gap: .35rem;
+}

@@ -1,0 +1,60 @@
+.ui-wrapper {
+    padding: 0 1rem;
+}
+
+.ui-filter {
+    padding: 0 .5rem;
+    background-color: var(--color-1);
+    border-radius: var(--border-radius);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.ui-filter-top {
+    width: 100%;
+}
+
+.ui-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    gap: .5rem;
+}
+
+.ui-element {
+    cursor: pointer;
+    display: flex;
+    padding: .35rem .75rem;
+    font-weight: 500;
+    gap: .35rem;
+}
+
+.ui-filter-top {
+    padding: .5rem 0;
+}
+
+.ui-filter-bottom {
+    padding: 1.35rem 0;
+}
+
+.ui-element.ui-element-secondary {}
+
+.ui-list::-webkit-scrollbar {
+    display: none;
+}
+
+.ui-opacity {
+    opacity: .35;
+}
+
+.ui-badge-primary {
+    background-color: var(--color-3);
+    border-radius: var(--border-radius);
+    color: var(--color-1);
+}
+
+.ui-more-gap {
+    gap: 2.5rem;
+}
