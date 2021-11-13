@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { ItemModel } from '@core/models/Item.interface';
+import { Store } from '@ngrx/store';
+import { addItem } from 'src/app/state/actions/items.actions';
 
 @Component({
   selector: 'app-header',
@@ -7,11 +10,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  constructor(private store: Store) { }
 
   ngOnInit(): void {
     console.log('Calle 1');
 
+  }
+
+  addItem(): void {
+    const dataItem: ItemModel = {
+      name: 'pepe',
+      price: 1,
+      image: 'https://lh3.googleusercontent.com/0FzDWftLAKj7eb2zym0h8WhlS1w0fj-YE2SVOdogxyuE9xNPRhWG_8V0JN-TiH6C00x1BxHEB5tE7xbWmP4FaMZBY0hTgvhvJbQdtQ=w286'
+    }
+    this.store.dispatch(addItem({ item: dataItem }))
   }
 
 }
