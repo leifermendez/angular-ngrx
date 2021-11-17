@@ -4,7 +4,7 @@ import { ShowCasePageComponent } from './page/show-case-page/show-case-page.comp
 
 const routes: Routes = [
   {
-    path: '',
+    path: '',//TODO: localhost/show-case **
     component: ShowCasePageComponent
   }
 ];

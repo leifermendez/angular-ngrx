@@ -12,6 +12,7 @@ export class ShowCaseService {
 
   getDataApi(): Observable<any> {
     //TODO: Aqui podemos hacer http.get('api...')
+    //TODO this.http.get('api')
     const data = [
       {
         name: "Pudgy Penguin #1",
