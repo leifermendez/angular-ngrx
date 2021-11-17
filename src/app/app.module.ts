@@ -8,6 +8,8 @@ import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { itemsReducer } from './state/reducers/items.reducers';
 import { ROOT_REDUCERS } from './state/app.state';
+import { EffectsModule } from '@ngrx/effects';
+import { ItemsEffects } from './state/effects/items.effects';
 
 
 
@@ -20,7 +22,8 @@ import { ROOT_REDUCERS } from './state/app.state';
     AppRoutingModule,
     HttpClientModule,
     StoreModule.forRoot(ROOT_REDUCERS),
-    StoreDevtoolsModule.instrument({ name: 'TEST' })//TODO: <-----
+    StoreDevtoolsModule.instrument({ name: 'TEST' }),
+    EffectsModule.forRoot([ItemsEffects])//TODO: <-----
   ],
   providers: [],
   bootstrap: [AppComponent]
